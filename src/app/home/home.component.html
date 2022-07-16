@@ -1,0 +1,19 @@
+<h1>nono</h1>
+<!-- <h2>Hello {{name}}</h2> -->
+<h1>Chao {{name}}</h1>
+<h2>Ban {{age}} tuoi</h2>
+
+<div *ngIf="age<18">Ban duoi 18 tuoi</div>
+
+<div *ngIf="age>18">Ban tren 18 tuoi</div>
+<div *ngFor="let car of vehicles">
+    <li>{{car}}</li>
+</div>
+
+<select>
+    <option  *ngFor="let car of vehicles">{{car}}</option>
+</select>
+
+<input type="text" [(ngModel)]="name">
+
+<button (click)="tangTuoi()">Up age</button>
