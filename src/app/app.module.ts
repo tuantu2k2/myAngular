@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { HighlightDirective } from './Diretives/highlight.directive';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
     PagenotfoundComponent,
+    HighlightDirective,
 
   ],
   imports: [

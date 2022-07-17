@@ -2,11 +2,11 @@ HOME
 <h1>nono</h1>
 <!-- <h2>Hello {{name}}</h2> -->
 <h1>Chao {{name | uppercase}}</h1>
-<h2>Ban {{age | number: "0.1-5"}} tuoi</h2>
+<h2 appHighlight>Ban {{age | number: "0.1-5"}} tuoi</h2>
 
 <div *ngIf="age<18; then condition1 else condition2"></div>
 
-<ng-template #condition1 appHighlight>Ban duoi 18</ng-template>
+<ng-template #condition1>Ban duoi 18</ng-template>
 <ng-template #condition2>Ban du 18t</ng-template>
 <div *ngFor="let car of vehicles">
     <li>{{car}}</li>
